@@ -1,0 +1,34 @@
+1. Enable gasses for dive. Click Enable box
+
+2. Choose Closed circuit option if planning a rebreather dive
+
+3. Adjust oxygen and helium percentages of all enabled gasses.
+Click on Gas name to make active in the gas mix adjuster 
+
+Click +- to adjust oxygen
+Click +- to adjust helium
+
+4. Choose which gasses are used in deco only. Click Deco box
+
+5. Click on bottom gas
+Adjust bottom depth
+Adjust bottom time
+If closed circuit dive, adjust PPO2
+
+6. Click Calculate Deco
+Decompression schedule and dive profile are updated
+
+7. If required, Adjust VGM safety parameters to tweak decompression.
+Equivalent Gradient Factor shows approximate gradient factors for comparisson
+
+You have now planned a dive using DivePlan VGM
+
+8. Save dive
+Save dive as CSV file for ease of importing into standard spreadsheet software
+
+9. Adjust Last stop depth if required
+
+10. Change to full ascent and stop depth professional decompression schedule if required.
+
+
+contents active gasses by clicking helium + -, and

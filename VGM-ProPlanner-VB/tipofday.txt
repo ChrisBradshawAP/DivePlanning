@@ -1,0 +1,6 @@
+VGM - Decompression philosophy
+
+The VGM algorithm has been built on recent practical dive planning and diving techniques as well as the scientific and theoretical understanding over the past 100 years. It combines better theoretical understanding of bubble physics together with known diving practices that help decompression and well being after and during decompression diving.
+
+A basic version of PC dive planning software VGM ProPlanner is available free from the web site. This allows a quick way to see what decompression the VRx dive computer will give and allow specific conservatism factors to be tried out on the PC before then choosing the right ones for a dive on the VRx. The PC software also gives print outs and an output in common spreadsheet style format for use in creating back-up tables.
+

@@ -1,0 +1,6 @@
+VGM also gives the user the ability to change the conservatism of the decompression to make it more conservative, but also more aggressive. Some technical divers find they feel good after a decompression with less in water time than others. The equivalent gradient factor for the VGM setting is displayed for comparison with other dive planning software and computers.
+
+
+We feel the default settings will suit many experienced divers, and it is the input of real technical divers in the choice of these settings that has made VR Technology and its team at the forefront of technical diving product design for over 20 years.
+
+

@@ -1,0 +1,19 @@
+DO NOT DIVE USING THESE TABLES. BETA SOFTWARE TESTING ONLY
+Dive Plan list as on : 24/Jun/2006
+
+Plan No.,Plan Date,Max Depth,Bottom mins,Gas ID,PPO2,Open/Closed,O2,Hellium,
+SP00000001,11/07/2005,76m   ,67mins,Gas 8,1.14   , Open Circuit,15   ,45   ,
+SP00000002,02/08/2005,47m   ,32mins,Gas 4,1.22   , Open Circuit,38   ,0   ,
+SP00000004,09/10/2005,58m   ,45mins,Gas 4,1.33   , Open Circuit,36   ,0   ,
+SP00000005,14/11/2005,64m   ,44mins,Gas 7,1.15   , Open Circuit,18   ,35   ,
+SP00000006,19/11/2006,87m   ,81mins,Gas 8,1.65   , Closed Circuit,17   ,43   ,
+SP00000007,25/12/2005,30m   ,27mins,Gas 8,0.60   , Open Circuit,15   ,45   ,
+SP00000008,16/06/2006,76m   ,86mins,Gas 7,1.21   , Open Circuit,18   ,35   ,
+SP00000009,23/06/2006,66m   ,30mins,Gas 7,1.73   , Closed Circuit,18   ,35   ,
+SP00000010,23/06/2006,121m   ,30mins,Gas 8,1.97   , Open Circuit,15   ,45   ,
+SP00000011,09/01/2006,80m   ,20mins,Gas 8,1.31   , Open Circuit,15   ,34   ,
+SP00000013,23/06/2006,71m   ,10mins,Gas 8,1.22   , Open Circuit,15   ,45   ,
+SP00000014,18/04/2006,80m   ,20mins,Gas 7,1.62   , Closed Circuit,18   ,34   ,
+SP00000015,23/06/2006,79m   ,33mins,Gas 7,1.60   , Open Circuit,18   ,36   ,
+SP00000016,23/06/2006,77m   ,90mins,Gas 7,1.49   , Open Circuit,18   ,35   ,
+SP00000017,23/06/2006,65m   ,29mins,Gas 8,1.13   , Open Circuit,15   ,45   ,
