@@ -1,0 +1,6 @@
+VGM incorporates 4 main features:
+1.	Haldane decompression model 
+2.	Modification of over pressure tolerances or M values for the faster tissues to create a decompression profile similar to a bubble model like VPM 
+3.	Further modification of over pressure tolerances for deep or long exposure dives, especially in the fast and middle order tissues 
+4.	Automatic adjustment of the above parameters to allow the default settings to give common decompression and No Stop times across the range of diving from 10m to 120m 
+5.	User adjustable parameters so the diver can use his/her experience to further modify the decompression to that which suits him/her. The equivalent gradient factors are displayed for a particular dive for ease of comparison with other dive computers and dive tables, although because this system goes beyond gradient factors certain adjustments may only give an estimate of the nearest GF equivalent.

@@ -1,0 +1,115 @@
+R0000,0196,0001,0031,M0000,T0031,A000000,B013456,C012345,D000909,E045283,F001909,G021283,H001909
+
+R
+Range: 0000 to 9999
+Formula: Reading=Reading
+
+Depth
+0196
+Range: 0000 to 9999
+Formula: Depth = Reading / 16
+Units: metres of Feet
+Depth Feet = metres x 3.28084
+eg: 0196 = 196/16 = 12.25m
+12.25m = 12.25 x 3.28084 = 40.19 feet
+Can not be negative
+
+Gas Number
+0001
+Range: 0000 to 9999
+Formula: Gas number = Reading
+Reference table of gases that have particular constituent for that dive number
+Can not be negative
+
+Average PPO2 for sensors available
+0031
+Range: 0000 to 9999
+Formula: PPO2 = Reading / 100
+Units: Bar
+eg 0031 = 0.31Bar PPO2
+Can not be negative
+
+Mark
+M0000
+Range: 0000 to 0001
+Formula: Put dot on depth profile if mark=0001 at that point
+Can not be negative
+
+Temperature
+T0031
+Range: 0000 to 9999
+Formula: Temperature centigrade = Reading
+Temperature Farenheit = (Centigrade x 9 / 5) + 32
+Can be negative
+
+External Depth
+A000000
+Range: 000000 to 999999
+Formula: External Depth = Reading / 10
+Units: metres of Feet
+External Depth Feet = metres x 3.28084
+Can not be negative
+
+Valve Battery
+B013456
+Range: 000000 to 999999
+Formula: Valve battery voltage = Reading / 156
+Units: Volts
+eg: battery volts = 013456 / 156 = 86.26 Volts
+Can not be negative
+
+Electronics Battery
+C012345
+Range: 000000 to 999999
+Formula: battery voltage = Reading / 156
+Units: Volts
+eg: battery volts = 012345 / 156 = 79.14 Volts
+Can not be negative
+
+HP Diluent
+D000909
+Range: 000000 to 999999
+Formula: HP Bar = Reading
+HP PSI = Bar x 14.7
+Units: Bar or PSI
+eg: HP = 000909 = 909Bar
+909 Bar = 13362 PSI
+Can not be negative
+
+HP O2
+E045238
+Range: 000000 to 999999
+Formula: HP Bar = Reading
+HP PSI = Bar x 14.7
+Units: Bar or PSI
+eg: HP = 045238 = 45238Bar
+45238 Bar = 664998 PSI
+Can not be negative
+
+PPO2 A
+F001909
+Range: 000000 to 999999
+Formula: Bar = Reading / 100
+Formula: PPO2 = Reading / 100
+Units: Bar
+eg 001909 = 19.09Bar
+Can not be negative
+
+PPO2 B
+G021283
+Range: 000000 to 999999
+Formula: Bar = Reading / 100
+Formula: PPO2 = Reading / 100
+Units: Bar
+eg 021283 = 212.83Bar
+Can not be negative
+
+PPO2 C
+H001909
+Range: 000000 to 999999
+Formula: Bar = Reading / 100
+Formula: PPO2 = Reading / 100
+Units: Bar
+eg 001909 = 19.09Bar
+Can not be negative
+

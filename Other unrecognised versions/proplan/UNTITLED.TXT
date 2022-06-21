@@ -1,0 +1,44 @@
+
+********************************************************************************
+                   MISSION UNTITLED  01/01/97  Dive number:1   
+********************************************************************************
+
+            Atmospheric pressure= 1000mBar    Safety factor=10%    
+
+  Depth1= 230fsw:  20mins 18%O2 40%He  Run Time= 20mins
+
+   DIVE 1 DECOMPRESSION REQUIREMENTS	      
+    Stop= 154fsw:   1mins 18%O2 40%He  Run Time= 23mins
+    Stop= 114fsw:   1mins 18%O2 40%He  Run Time= 26mins
+    Stop=  80fsw:   1mins 18%O2 40%He  Run Time= 28mins
+    Stop=  70fsw:   2mins 18%O2 40%He  Run Time= 30mins
+    Stop=  60fsw:   5mins 18%O2 40%He  Run Time= 35mins
+    Stop=  50fsw:   8mins 18%O2 40%He  Run Time= 44mins
+    Stop=  40fsw:  12mins 18%O2 40%He  Run Time= 56mins
+    Stop=  30fsw:  22mins 18%O2 40%He  Run Time= 78mins
+    Stop=  20fsw:  13mins 99%O2  1%He  Run Time= 91mins
+    Stop=  10fsw:  30mins 99%O2  1%He  Run Time=122mins
+
+      Total time to surface=102mins               
+      Time to first stop=5mins                  
+      CNS exposure: 46%peak, 46%dive end        
+      CNS exposure= 46%                           
+      Max PPO2=1.59bar  OTU=115units  OTUtotal=115
+      Dive Start:   Day 1   Time 00:00         
+      Dive Finish:  Day 1   Time 02:02         
+      Flight Time:  Day 1   Time 10:44
+      Surface gas=21%O2,  0%He
+      Surface interval=   0mins                     
+********************************************************************************
+  Depth1= 230fsw:  20mins 18%O2 40%He  Run Time= 20mins
+  Depth,    Gas,  Stop,  RT
+     10,  99/ 1,    30,   122
+     20,  99/ 1,    13,    91
+     30,  18/40,    22,    78
+     40,  18/40,    12,    56
+     50,  18/40,     8,    44
+     60,  18/40,     5,    35
+     70,  18/40,     2,    30
+     80,  18/40,     1,    28
+    114,  18/40,     1,    26
+    154,  18/40,     1,    23

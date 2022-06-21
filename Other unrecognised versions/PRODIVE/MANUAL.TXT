@@ -1,0 +1,319 @@
+******************************************************************************                                           
+                                     
+                                Pro Planner
+                            Operational Notes.
+                        Copyright Nick Bushell 1992, 1993, 1994, 1995
+
+WAIVER
+
+Pro Planner is designed as a tool for planning decompression schedules for
+use with Oxygen, Nitrogen and Helium. By using this software the user
+accepts full responsibility for any incidents occurring while executing
+dives to any schedule calculated by this software.
+
+Pro Planner does not warn where bad diving practice may occur as a
+result of a planned sequence.
+
+Always follow the basic rules:
+
+  Deepest dive first.
+
+  No 'yo-yo' dive profiles.  Recent research indicates that these
+  exaggerated profiles may lead to type 2 DCI even when the diver is
+  inside the no stop times on the  tables.
+
+  Especially on high exposure dives, make no more than two dives a day, with  
+  a day off in a sequence of days diving.
+
+  Avoid Carbon Dioxide build-up caused by over-work and/or inadequate
+  breathing equipment.
+
+  Avoid dehydration.
+
+Pro Planner will display both CNS and Pulmonary toxicity numbers. The user
+is reminded that Oxygen toxicity varies from person to person and day to
+day. A divers tolerance to Oxygen is greatly reduced by exercise (CO2 build
+up) and/or inadequate breathing equipment.
+
+For more details on Oxygen limits the user is directed to either the NOAA
+or IANTD Nitrox manuals. Oxygen toxicity is a science in itself and the
+user must be fully conversant with the tolerance limits.  This software
+cannot compensate in any way for over-stepping those limits; it will only
+calculate current values using established methods.
+
+Full and complete training is essential for all diving.  Further specialist 
+training in nitrox, tri-mix, and rebreather techniques is imperative before 
+attempting any dives with these specialist mixes.
+
+
+******************************************************************************
+
+                             SPECIFICATION
+
+Algorithm:          Buhlmann ZHL16
+Number of tissues:  16
+Compartments:       16
+N2 half-times(mins):
+ 4.0, 8.0, 12.5, 18.5, 27.0, 38.3, 54.3, 77.0, 109.0, 146.0, 187.0, 239.0,
+                                              305.0, 390.0, 498.0, 635.0
+He half-times(mins).
+ 1.51, 3.02, 4.72, 6.99, 10.21, 14.48, 20.53, 29.11, 41.20, 55.19, 70.69,
+                                  90.34, 115.29, 147.42, 188.24, 240.03
+
+Altitude range:          Maximum= 1400mbar   Minimum= 0 mbar.
+
+Warning! Although the software can calculate to 0mbar, the algorithm is only
+published to 3500m/11550ft above sea level.  Any dives executed above
+3500m/11550ft are at increased risk.
+
+Depth ranges.
+     Air             70m  220 ft.
+     Nitrox          70m  320 ft.
+     Tri mix        200m  640 ft.
+     Nitrox RB.     300m  970 ft.
+     Heliox RB.     300m  970 ft.
+
+Oxygen toxicity system.
+     CNS % exposure based on the published NOAA limits.
+     Pulmonary REPEX
+ (1bar PPO2 * 1 min = approx. 1 OTU).
+
+CNS timer reduction factor:  1:2 below 0.5 bar PPO2.
+
+Depth safety factor:     (DEPTH x 1.03) + 1metre 
+
+Ascent rate depends on depth.
+Higher ascent rates can be tolerated at greater Depth:
+	Depth range		Ascent Rate
+	greater than 24m	18m/min or 78ft/min
+	9m to 24m		12m/min
+	less than 9m		9m/min
+
+	Depth range		Ascent Rate
+	greater than 80ft	60ft/min
+	30ft to 80ft		40ft/min
+	less than 30ft		30ft/min
+
+Descent rate: included in bottom time
+
+Suitable computers and printers:
+IBM or compatible 086 to 486.
+
+Colour VGA screen preferable.
+9 pin dot matrix printers and HP compatible laser jet printers supported.
+Please call support if you have a specific requirement.
+
+
+
+******************************************************************************
+                               
+                               INSTRUCTIONS
+
+Pro Planner (PP) is simple to operate and comes in three upgradable versions:
+AIR/NITROX, TRIMIX, and RE-BREATHERS.
+
+INSTALLATION
+PP can be run from a floppy drive or be copied onto the hard drive of a PC.
+To install PP onto a PC simply type "INSTALL" with the disc in the floppy
+drive.  PP will automatically create a directory called Prodive (if you
+already have a directory called Prodive you may wish to rename it). To  run
+PP go to the directory and type PLAN.
+
+Once installed, you will be asked to accept the liability waiver by
+entering your name and address on the front screen.
+
+It is important you keep the master disc safe, as any upgrades can only
+issued by returning this disc. Any attempts to copy this disc may result in
+corruption of the algorithm and version log. In doing so you may also loose
+your right to any free upgrades.
+
+FRONT SCREEN
+Having registered your copy you will be asked to select one of the options.
+If an option is not accessible you may need to purchase another version
+(i.e. if you have bought the Air/nitrox version, Trimix is disabled).
+
+Options include:
+
+1   AIR
+  With  the  Air  option,  79%  N2/21% O2 is  automatically  assumed  as  the
+  breathing gas.
+  PPO2 and OTU's are displayed, as is tissue load. This is updated at the end
+  of each dive and at the end of surface interval.
+  As  with  all  options HELP is available in the top right of  the  planning
+  screen.
+
+2  NITROX
+  Any  combination of N2 and O2 can be used here, either during the dive, at
+  stops or between dives at the surface. Maximum Oxygen content 100%.
+
+3  TRIMIX
+  Any combination of N2, He and O2 can be used here, either during the dive,
+  at stops or between dives at the surface.
+
+4  NITROX RE-BREATHER plus New Bailout planning
+  This assumes a closed circuit Re breather and works by entering a PPO2.  If
+  no PPO2 is entered the system assumes 1.40Bar. At depths less than the
+  selected PPO2 the software will assume the maximum for that depth. The maximum 
+  PPO2 that can be entered is 2.00bar
+
+  To enter a bailout mode, enter 'b' or 'B' when prompted for PPO2 during
+  dive details entry. This will then prompt for bailout gas details. The
+  default for the bailout gas is air.
+  Once bailout mode has been activated, the bailout gas will be prompted for 
+  instead of diluent. To return back to closed circuit, enter 'c' or 'C' when
+  prompted for O2 entry.
+
+5  HELIOX RE-BREATHER plus New Bailout planning
+  This assumes a closed circuit Re breather and works by entering a PPO2.  If
+  no PPO2 is entered the system assumes 1.40Bar. At depths less than the
+  selected PPO2 the software will assume the maximum for that depth. The maximum 
+  PPO2 that can be entered is 2.00bar
+
+  To enter a different diluent mix, enter He and O2 percentages when prompted
+  during dive details entry. The diluent O2 default for the first depth is 
+  determined from the PPO2 rebreather setpoint entered. Thereafter, the 
+  default is the last value entered, or the maximum achievable if the inert 
+  gas percentages have changed.
+
+  To enter a bailout mode, enter 'b' or 'B' when prompted for PPO2 during
+  dive details entry. This will then prompt for bailout gas details. The
+  default for the bailout gas is the diluent.
+  Once bailout mode has been activated, the bailout gas will be prompted for 
+  instead of diluent. To return back to closed circuit, enter 'c' or 'C' when
+  prompted for O2 entry.
+
+6  UNITS (Feet, Metres)
+  The currently displayed units are used on screen. To change select  6.
+
+7  SAVE
+  To save a planned dive to disc, enter a name (a list of currently stored
+  dives is shown).
+
+8  RESTORE\REVIEW
+  This function allows several features to be accessed; 
+  1.    Mission creating.
+        In order to add dives to a preplanned dive sequence the user
+        simply recalls the planned dive using this option. Having then 
+        selected one of the planning options (1 to 5). You are asked if 
+        you wish to append this new dive to the sequence.  
+
+***Important*** If a planned mission is to include air, Nitrox and Trimix 
+                dives, then the Trimix option should be used throughout.
+                When an air or Nitrox dive is planned, obviously the
+                Helium content is left out. You cannot start the mission 
+                using the air option and then switch to Trimix part way.
+                Up to 10 dives may be planned in a mission.
+
+  2.   While reviewing the planned dive you may print the 
+       decompression schedule. 
+
+  3.   While reviewing the dive you may select to calculate 
+       total gas volume requirements. Simply follow the prompts.
+  
+9  SAFETY FACTOR
+  By typing in a safety factor, the total inert gas component in the mix is
+  increased by 1% for every 5% entered.  This safety percentage does not apply
+  when at the surface, only when diving.
+
+A  ATMOSPHERIC
+  Warning!  Adjustment of atmospheric pressure will seriously affect your
+  decompression schedule.  See notes in the specification section for 
+  pressure ranges.
+
+B  BREATHING RATE
+   Enter your surface breathing rate. This is used in the gas volume 
+   calculations.
+
+C  CYLINDER FILLING
+  For Nitrox and Trimix dives this function allows you to enter the fill
+  pressure of a cylinder, the % of each gas and use partial pressure
+  mathematics to calculate the fill pressures of each gas (Air is assumed
+  rather than pure Nitrogen).
+  Another function allows you to enter an equivalent Narcosis depth, PPO2
+  target and dive depth. Gas percentages will then be calculated.
+
+S  Last Stop
+  This allows the final stop in a decompression sequence to be performed at          
+  6m/20ft, 4.5m/15ft, or 3m/10ft.  Some recent research has shown that the 
+  3m/10ft is the least safest stop to perform, and a safety advantage 
+  would be gained by doing an extended 6m/20ft stop or 4.5/15m stop instead.
+  Enter S to toggle between the choices.
+  If the 4.5/15ft stop is used, then an asterix * is shown against the stop.
+
+T  TIME OF DAY
+  If no start time is entered the system assumes 00:00 hours on day 1 as the
+  mission start time.  Time of day can be entered in order to calculate
+  mission end times.
+
+  The software runs three time line systems.
+  1.    Bottom time and Time at Stops
+        Descent is assumed to be included in bottom time and time at
+        each individual stop is shown. Time to surface reflects ascent rates.
+  2.    Run Time.
+        This is time from leaving surface to the end of each depth change.
+  3.    Decompression Time.
+        Time from leaving bottom to end of each stop.
+
+P  Printer type and format
+  Pro-Planner can print to a dot matrix or Laser jet printer. On the Laser 
+  jet, the format can be Portrait or Landscape. 
+  Press P to toggle to the printer and format of your choice.
+
+O  Gas Optimize "NEW"
+  Gas Optimize allows the PPO2 of the open circuit mix to be kept within a 
+  range. An upper and lower limit of PPO2 is selected. Then during the dive, 
+  the default return value for the O2% will be forced to be within the PPO2 
+  limits. If the last O2% is within the range then this will be the default.
+  If not, then a new O2% is calculted so as to give the upper limit PPO2. If
+  the upper and lower limit are the same, then the default O2% for each 
+  depth will effectively give a fixed PPO2 for the dive.
+
+M  MANUAL
+  This manual is displayed on the screen, and can be printed out if required.
+  The manual is held in a read-only text file called MANUAL.TXT, and can 
+  also be viewed by from the DOS prompt by using: TYPE MANUAL.TXT | MORE
+
+U  BUBBLES
+  Toggles the moving bubbles ON and OFF the screen.
+
+0  Exit.
+  Quits the programme.
+
+******************************************************************************
+
+                  Thank you for purchasing Pro Planner.
+          Registered users will be kept informed of any upgrades.
+
+   Upgrades in the pipeline include: 
+     Extended mission planning
+     Air-breaks during decompression
+     Facility gas managment software
+
+???Please feed back your comments. We are only as good as your requests????
+
+   Other products include:
+     Technical Diver training. Tech. equipment supply.
+
+******************************************************************************
+     
+       Registration form.
+       Please complete and return.
+
+       To:     Cis-Lunar
+               25 Cowley Rd.
+               Nuffield Ind. Est
+               Poole
+               Dorset
+               BH17 7UJ
+  From:
+  Name.     ______________________________________
+  Address.  ______________________________________
+            ______________________________________
+  City.     ______________________________________
+  Code.     ______________________________________
+  
+  Phone No. ______________________________________
+  
+  Date purchased. ____________________________
+  Serial No. ___________________
+  

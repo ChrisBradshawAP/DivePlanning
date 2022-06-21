@@ -1,0 +1,14 @@
+Dive Series List 
+
+Series No,#,Dive Plan No,Surface Intval,Max Depth,Safety Factor,Atmospheric,,
+SM00000001,1,SP00000002,10hrs,70m,0%,1000mBar,,
+,2,SP00000001,8hrs,53m,0%,1000mBar,,
+
+
+
+Dive Plan List 
+
+Plan No.,Max Depth,Bottom mins,Gas ID,PPO2,Open/Closed,O2,Hellium,
+SP00000001,53m   ,40mins,Gas 8,0.95   , Open Circuit,15   ,45   ,
+SP00000002,70m   ,22mins,Gas 8,1.20   , Open Circuit,15   ,45   ,
+
